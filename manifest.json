@@ -1,14 +1,59 @@
 {
   "id": "uranus-plugin-hello",
   "name": "Hello 示例插件",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "nikonotnicotine",
   "repo": "https://github.com/nikonotnicotine/uranus-plugin-hello",
-  "description": "一个什么都不做的示例插件，用来验证插件市场的流程和控制台的渲染。",
+  "description": "一个几乎什么都不做的示例插件，用来验证插件市场的流程、控制台的渲染和插件配置。",
   "uranus": ">=1.23.0",
   "entry": {
     "client": "client.js",
     "css": "style.css"
   },
-  "permissions": []
+  "permissions": [],
+  "config": [
+    {
+      "key": "greeting",
+      "type": "string",
+      "title": "打招呼用的话",
+      "desc": "插件加载时会把这句话打到浏览器控制台里。",
+      "default": "示例插件已加载 —— 它什么也没做，这是对的。",
+      "maxLength": 100
+    },
+    {
+      "key": "style",
+      "type": "select",
+      "title": "用哪个级别打",
+      "desc": "对应 console 的三个方法，用来看看 select 长什么样。",
+      "default": "log",
+      "options": [
+        { "value": "log", "label": "普通（log）" },
+        { "value": "info", "label": "信息（info）" },
+        { "value": "warn", "label": "警告（warn）" }
+      ]
+    },
+    {
+      "key": "repeat",
+      "type": "number",
+      "title": "打几遍",
+      "desc": "1 到 5。用来看看数字输入和范围校验。",
+      "default": 1,
+      "min": 1,
+      "max": 5
+    },
+    {
+      "key": "showTime",
+      "type": "boolean",
+      "title": "带上时间",
+      "desc": "在那句话前面加个时间戳。",
+      "default": false
+    },
+    {
+      "key": "demoSecret",
+      "type": "secret",
+      "title": "假装是个密钥",
+      "desc": "这个插件不会用它，纯粹用来演示密码框和「保存后只显示圆点」。真实插件在这里填 API key。",
+      "required": false
+    }
+  ]
 }
