@@ -1,0 +1,14 @@
+{
+  "id": "uranus-plugin-hello",
+  "name": "Hello 示例插件",
+  "version": "1.0.0",
+  "author": "nikonotnicotine",
+  "repo": "https://github.com/nikonotnicotine/uranus-plugin-hello",
+  "description": "一个什么都不做的示例插件，用来验证插件市场的流程和控制台的渲染。",
+  "uranus": ">=1.23.0",
+  "entry": {
+    "client": "client.js",
+    "css": "style.css"
+  },
+  "permissions": []
+}
