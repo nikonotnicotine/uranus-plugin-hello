@@ -38,7 +38,7 @@ v1.1.0 起它演示了插件配置：在控制台的「插件」分区点它的�
 1. 在 [Releases](https://github.com/nikonotnicotine/uranus-plugin-hello/releases) 下载 zip；
 2. 打开 Uranus 控制台 → 插件 → 导入 zip。
 
-需要 Uranus v1.23.0 以上；插件配置（这个插件 v1.1.0 演示的那部分）要 v1.24.0 以上。
+需要 Uranus v1.23.0 以上；插件配置（这个插件 v1.1.0 演示的那部分）要 v1.23.3 以上 —— 装在更早的版本上，插件照常跑，只是设置里那几项读到的永远是默认值。
 
 ## 给插件作者看的
 
